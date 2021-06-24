@@ -86,6 +86,11 @@ header ul a {
   text-align: center;
 }
 
+.meet p {
+  text-align: center;
+  width: 100%;
+}
+
 .scroll {
   width: 30px;
   margin-top: 2em;
@@ -298,8 +303,6 @@ section {
   .hero {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 66% auto;
-        grid-template-columns: 66% auto;
     background: unset;
     padding: 0;
   }
@@ -323,10 +326,18 @@ section {
     margin-bottom: 12.5vh;
     width: 60%;
     max-height: 500px;
+    z-index: 1;
   }
   .featured img {
     float: right;
     max-width: 500px;
+  }
+  .about {
+    background: white;
+  }
+  .about .text-about {
+    color: black;
+    text-align: center;
   }
 }
 
