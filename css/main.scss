@@ -220,10 +220,6 @@ section {
         text-align: left;
     }
 
-    /*img {
-       //margin-left: 2em; 
-    }*/
-
     .featured-container {
         margin-left: 2em;
         display: grid;
@@ -301,7 +297,7 @@ section {
 
     .hero {
         display: grid;
-        //grid-template-columns: 66% auto;
+        grid-template-columns: 66% auto;
         background: unset;
         padding: 0;
         
