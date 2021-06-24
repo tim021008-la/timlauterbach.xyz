@@ -1,76 +1,189 @@
-<!doctype html>
+<title>Tim Lauterbach Portfolio Site | Software Developer, (Java, C#, C, Python)</title>
+<meta name="description"
+	content="Tim Lauterbach is a Software Developer with a wide array of skills from programming and design.">
+
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>Dummy Page</title>
-	<meta name="description" content="Simple, quick, standalone responsive placeholder Website without any additional resources">
-	<meta name="author" content="https://gist.github.com/oliveratgithub">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-	<!--[if lt IE 9]>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-	<![endif]-->
-	<!--[if lte IE 8]>
-		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
-	<![endif]-->
-	<!--[if gt IE 8]><!-->
-		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-	<!--<![endif]-->
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-	<style>
-		body {
-			line-height: 1.7em;
-			color: #000;
-			background-color: #ddd;
-			font-family: "Helvetica Neue", helvetica, arial, sans-serif;
-			text-shadow: 1px 1px 16px rgba(255, 255, 255, 0.8);
-			font-size: 34px;
-			text-align: center;
-			margin-top: 85px;
-		}
-		h1, h2, h3, h4, h5, h6, label { color: #fff; }
-		h1 { text-transform: uppercase; }
-		#countdown { line-height: 1.1em; }
-	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-	<div class="pure-g">
-		<div class="pure-u-1">
-			<h1>Stay tuned</h1>
-			<h2>something new is coming here</h2>
-			<div id="countdown">
-				<span class="days">14</span>&nbsp;<span class="timeRefDays">days</span>
-				<span class="hours">00</span>&nbsp;<span class="timeRefHours">hours</span>
-				<span class="minutes">00</span>&nbsp;<span class="timeRefMinutes">minutes</span>
-				<span class="seconds">00</span>&nbsp;<span class="timeRefSeconds">seconds</span>
-			</div>
+
+	<div class="nav-container">
+		<header>
+			<a href="index.html" class="logo">Tim Lauterbach</a>
+			<nav>
+				<ul>
+					<li><a href="#">My Work</a></li>
+					<li><a href="#">My skills</a></li>
+					<li><a href="#">Contact me</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="social-header">
+			<ul>
+				<li><a href="#"><img src="assets/logos/links/github.svg" alt="Github"></a></li>
+				<li><a href="#"><img src="assets/logos/links/twitter.svg" alt="Twitter"></a></li>
+				<li><a href="#"><img src="assets/logos/links/xing.svg" alt="Xing"></a></li>
+				<li><a href="#"><img src="assets/logos/links/linkedin.svg" alt="LinkedIn"></a></li>
+			</ul>
 		</div>
 	</div>
-</body>
-<script>
-/*
- * Here is an example of how to use Backstretch as a slideshow.
- * Just pass in an array of images, and optionally a duration and fade value.
- *
- * INFO: Duration is the amount of time in between slides,
- * INFO: and fade is value that determines how quickly the next image will fade in
- */
-$.backstretch([
-	"https://unsplash.it/g/1600?image=1073"
-	, "https://unsplash.it/g/1600?image=1068"
-	, "https://unsplash.it/g/1600?image=1011"
-], {duration: 3000, fade: 750});
 
-/*
-* Basic Count Down to Date and Time
-* Author: @mrwigster / trulycode.com
-*
-* INFO: change the "date:"-value to your desired target date-time
-*/
-!function(a){a.fn.countdown=function(b,c){function d(){eventDate=Date.parse(f.date)/1e3,currentDate=Math.floor(a.now()/1e3),eventDate<=currentDate&&(c.call(this),clearInterval(interval)),seconds=eventDate-currentDate,days=Math.floor(seconds/86400),seconds-=60*days*60*24,hours=Math.floor(seconds/3600),seconds-=60*hours*60,minutes=Math.floor(seconds/60),seconds-=60*minutes,1==days?e.find(".timeRefDays").text("day"):e.find(".timeRefDays").text("days"),1==hours?e.find(".timeRefHours").text("hour"):e.find(".timeRefHours").text("hours"),1==minutes?e.find(".timeRefMinutes").text("minute"):e.find(".timeRefMinutes").text("minutes"),1==seconds?e.find(".timeRefSeconds").text("second"):e.find(".timeRefSeconds").text("seconds"),"on"==f.format&&(days=String(days).length>=2?days:"0"+days,hours=String(hours).length>=2?hours:"0"+hours,minutes=String(minutes).length>=2?minutes:"0"+minutes,seconds=String(seconds).length>=2?seconds:"0"+seconds),isNaN(eventDate)?(alert("Invalid date. Example: 30 Tuesday 2013 15:50:00"),clearInterval(interval)):(e.find(".days").text(days),e.find(".hours").text(hours),e.find(".minutes").text(minutes),e.find(".seconds").text(seconds))}var e=a(this),f={date:null,format:null};b&&a.extend(f,b),d(),interval=setInterval(d,1e3)}}(jQuery),$(document).ready(function(){
-  $("#countdown").countdown({date:"1 July 2021 23:23:23",format:"on"})});
-</script>
+	<div class="hero">
+		<div class="content">
+			<h1>Software Designed For You</h1>
+			<div class="meet">
+				<p>Meet Tim Lauterbach</p>
+			</div>
+			<svg class="scroll" width="40" height="80" viewBox="0 0 40 77">
+				<g id="scroll" transform="translate(-253 -787)">
+					<g id="Rectangle_12" data-name="Rectangle 12" transform="translate(253 787)" fill="none"
+						stroke="#fff" stroke-width="4">
+						<rect width="40" height="77" rx="20" stroke="none" />
+						<rect x="2" y="2" width="36" height="73" rx="18" fill="none" />
+					</g>
+					<circle class="circle" id="Ellipse_1" data-name="Ellipse 1" cx="11" cy="11" r="11"
+						transform="translate(262 798)" fill="#fff" />
+				</g>
+			</svg>
+		</div>
+		<img class="hero-design" src="assets/misc/pic_holder.svg" alt="Me">
+	</div>
+
+	<div class="about">
+		<h1>About Me</h1>
+		<div class="text-about">
+			<p>Hello there, <br> <br>
+				I’m Tim, 18 years old and a software developer. I have been programming for 4 years. I
+				mostly programm things that I need for myself or things that colleagues asked me to help, but I’m
+				open for anything really!</p>
+		</div>
+	</div>
+
+	<section class="skills">
+		<div class="skills-container">
+			<ul>
+				<li class="transition2">
+					<div class="icon-container one">
+						<img src="assets/logos/skills/desktop.svg" alt="Frontend">
+					</div>
+					<p class="skill-title">
+						Frontend
+					</p>
+					<p class="skill-text">Experience in making Websites using JavaScript , HTML and CSS</p>
+				</li>
+				<li class="transition2">
+					<div class="icon-container two">
+						<img src="assets/logos/skills/server.svg" alt="Backend">
+					</div>
+					<p class="skill-title">
+						Backend
+					</p>
+					<p class="skill-text">Experience in building databases using MySQL as well as making applications
+						using Java, C#, C and Python</p>
+				</li>
+				<li class="transition2">
+					<div class="icon-container three">
+						<img src="assets/logos/skills/pencil.svg" alt="Design">
+					</div>
+					<p class="skill-title">
+						Design
+					</p>
+					<p class="skill-text">I try making designs from time to time</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="featured">
+		<div class="featured-container transition3">
+			<div class="featured-left">
+				<div class="inner">
+					<p class="subtitle">Featured Project</p>
+					<p class="featured-title">Discord Bot | Manager</p>
+					<p class="featured-desc">Discord Bot used for teaching that uses tasks given by the teacher and
+						distributes them to the students. Solutions can also be submitted by students and approved by
+						the teacher. And it even supports quizzes and a ranking system to further encourage students to
+						partake in your lessons!</p>
+				</div>
+			</div>
+			<a href="#"><img class="right" src="assets/projects/discord bot/task.png" alt="Tasks"></a>
+		</div>
+		<div class="featured-container transition3">
+			<div class="featured-left">
+				<div class="inner">
+					<p class="subtitle">Featured Project</p>
+					<p class="featured-title">Discord Bot | Manager</p>
+					<p class="featured-desc">Discord Bot used for teaching that uses tasks given by the teacher and
+						distributes them to the students. Solutions can also be submitted by students and approved by
+						the teacher. And it even supports quizzes and a ranking system to further encourage students to
+						partake in your lessons!</p>
+				</div>
+			</div>
+			<a href="#"><img class="right" src="assets/projects/discord bot/task.png" alt="Tasks"></a>
+		</div>
+		<div class="featured-container transition3">
+			<div class="featured-left">
+				<div class="inner">
+					<p class="subtitle">Featured Project</p>
+					<p class="featured-title">Discord Bot | Manager</p>
+					<p class="featured-desc">Discord Bot used for teaching that uses tasks given by the teacher and
+						distributes them to the students. Solutions can also be submitted by students and approved by
+						the teacher. And it even supports quizzes and a ranking system to further encourage students to
+						partake in your lessons!</p>
+				</div>
+			</div>
+			<a href="#"><img class="right" src="assets/projects/discord bot/task.png" alt="Tasks"></a>
+		</div>
+		<div class="featured-container transition3">
+			<div class="featured-left">
+				<div class="inner">
+					<p class="subtitle">Featured Project</p>
+					<p class="featured-title">Discord Bot | Manager</p>
+					<p class="featured-desc">Discord Bot used for teaching that uses tasks given by the teacher and
+						distributes them to the students. Solutions can also be submitted by students and approved by
+						the teacher. And it even supports quizzes and a ranking system to further encourage students to
+						partake in your lessons!</p>
+				</div>
+			</div>
+			<a href="#"><img class="right" src="assets/projects/discord bot/task.png" alt="Tasks"></a>
+		</div>
+
+
+	</section>
+
+
+	<section class="bottom">
+		<div class="items">
+			<ul>
+				<a href="#">Impressum</a>
+				<a href="#">CV</a>
+			</ul>
+		</div>
+	</section>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+
+		tl.from('.content', {
+			y: '-30%',
+			opacity: 0,
+			duration: 2,
+			ease: Power4.easeOut
+		})
+	</script>
+
+</body>
+
 </html>
